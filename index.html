@@ -223,19 +223,17 @@
          </div>
          <div class="move-up"><a class="w-inline-block" href="#nav"><img alt="" loading="lazy" src="./pictures/6426f837d85f22403a87463e_iconmonstr-caret-up-circle-filled-240.png"/></a></div>
       </div>
-      <script>
-           document.addEventListener("DOMContentLoaded", function() {
-              const badges = document.querySelectorAll(".w-webflow-badge");
-              badges.forEach(function(badge) {
-                badge.classList.remove("w-webflow-badge");
-                badge.innerHTML = "";
-                badge.addEventListener("click", function(e) {
-                  e.preventDefault();
-                });
-              });
-            });
-      </script>
-      <script crossorigin="anonymous" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" src="./javascript/jquery-3.5.1.min.dc5e7f18c8.js" type="text/javascript"></script><script src="./javascript/webflow.57b253699.js" type="text/javascript"></script><!--[if lte IE 9]><script src="//cdnjs.cloudflare.com/ajax/libs/placeholders/3.0.2/placeholders.min.js"></script><![endif]-->
       
+      <script crossorigin="anonymous" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" src="./javascript/jquery-3.5.1.min.dc5e7f18c8.js" type="text/javascript"></script><script src="./javascript/webflow.57b253699.js" type="text/javascript"></script><!--[if lte IE 9]><script src="//cdnjs.cloudflare.com/ajax/libs/placeholders/3.0.2/placeholders.min.js"></script><![endif]-->
+      <script>
+         <script>
+         $(document).ready(function() {
+            $(".w-webflow-badge").removeClass("w-webflow-badge").empty().click(function(e) {
+               e.preventDefault();
+            });
+         });
+
+      </script>
+      </script>
   </body>
 </html>
